@@ -1,0 +1,218 @@
+:root {
+   --headers-color: #212121;
+   --secondary-text-color: #757575;
+   --header-link-color: #2196F3;
+   --footer-link-color:rgba(255, 255, 255, 0.6);
+   --white-simbols-color:#FFFFFF;
+   --primery-background-color:#FFFFFF;
+   --secondary-background-color:#F5F4FA;
+   --footer-background-color:#2F303A;
+   --logo-black-color:#000000;
+}
+/* Цвет заголовков - основного текста #212121 */
+/* Вторичый цвет основного текста #757575 */
+/* Цвет ссылок в футере rgba(255, 255, 255, 0.6)*/
+/* Цвет голубой ссылки в хедере и кнопки заказать #2196F3 */
+/* Цвет белых букв  #FFFFFF*/
+/* Первичный цвет фона #FFFFFF */
+/* Вторичный цвет фона #F5F4FA */
+/* Цвет подвала #2F303A */
+/* Цвет лого черный #000000 */
+body {
+    background-color: var(--primery-background-color);    
+    color:var(--secondary-text-color);
+    font-family:'roboto', 'serif', 'verdana','tahoma', sans-serif;
+    font-size:14px;
+    letter-spacing: 0.03em;
+}
+/* Убирает маркер в списках */
+.list,
+.feature-list {
+    list-style: none;
+}
+/*Logo*/
+.logo {
+    color:var(--logo-black-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+.logo:hover {
+    color:var(--header-link-color);
+}
+
+.pre-logo {
+    color:var(--header-link-color);
+}
+
+/* site-nav */
+.site-nav .link {
+    color:var(--headers-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--header-link-color);
+}
+.site-nav .link.current {
+    color:var(--header-link-color);
+}
+/*address*/
+.address .link {
+    color:var(--secondary-text-color);
+    font-weight: 500;
+    line-height: 1.14px;
+    letter-spacing: 0.02em;   
+}
+.address .link:hover,
+.address .link:focus {
+    color: var(--header-link-color);
+}
+.address .phone {
+    color:var(--secondary-text-color);
+}
+.link { 
+    text-decoration: none;
+}
+.address.list {
+    font-style: normal;
+}
+
+/* Hero */
+.hero-title {
+    color: var(--white-simbols-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    background-color: #757575;
+}
+/* Hero Button Замовити послугу */
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+.hero button {
+    color: var(--white-simbols-color);
+    background-color: var(--header-link-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+/* Стили для index.html */
+/* Секція Особливості*/
+.feature-list .title {
+    color:var(--headers-color);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+}
+.feature-list .text {
+    line-height: 1.71;
+}
+
+/*Секція Наша команда*/
+.section-title
+{
+    color:var(--headers-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+.emplois .name {
+    color:var(--headers-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+.emplois .text {
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+/*Footer*/
+.link.list-adress {
+    color:var(--white-simbols-color);
+}
+.link.list-adress:hover,
+.link.list-adress:focus {
+    color:var(--header-link-color);
+}
+.link.list-mail {
+    color:var(--footer-link-color);
+}
+.link.list-mail:hover,
+.link.list-mail:focus {
+    color:var(--header-link-color);
+}
+.link.list-phone {
+    color:var(--footer-link-color);
+}
+.link.list-phone:hover,
+.link.list-phone:focus {
+    color:var(--header-link-color);
+}
+.logo .footer-logo {
+    color:var(--white-simbols-color)
+}
+
+.foot{
+    background-color: darkgray;
+}
+
+/* Стили для  страницы Portfolio */
+
+/*Кнопки Фильтр*/
+
+.filter .select {
+    color:var(--headers-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+}
+.filter .select:hover,
+.filter .select:focus {
+    color: var(--white-simbols-color);
+    background-color: var(--header-link-color);    
+}
+
+.filter .current {
+    color: var(--white-simbols-color);
+    background-color: var(--header-link-color);    
+}
+.filter .current:hover,
+.filter .current:focus {
+    color: var(--white-simbols-color);
+    background-color: var(--header-link-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;    
+}
+
+/* Секція Потфоліо */
+.portfolio .title {
+    color:var(--headers-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.portfolio .text {
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    line-height: 1.87;
+}
