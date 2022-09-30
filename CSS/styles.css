@@ -19,11 +19,19 @@
 /* Цвет подвала #2F303A */
 /* Цвет лого черный #000000 */
 body {
+    margin:0;
     background-color: var(--primery-background-color);    
     color:var(--secondary-text-color);
     font-family:'roboto', 'serif', 'verdana','tahoma', sans-serif;
     font-size:14px;
     letter-spacing: 0.03em;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid tomato;
 }
 /* Убирает маркер в списках */
 .list,
@@ -44,6 +52,11 @@ body {
 
 .pre-logo {
     color:var(--header-link-color);
+}
+
+/* Page header */
+.page-header {
+    background-color: #ccc;
 }
 
 /* site-nav */
@@ -177,13 +190,18 @@ button {
 /* Стили для  страницы Portfolio */
 
 /*Кнопки Фильтр*/
+.select {
+    display: inline-block;
+    border: 0;
+    border-radius: 4px;
+    padding: 6px 22px;
 
-.filter .select {
     color:var(--headers-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
 }
+
 .filter .select:hover,
 .filter .select:focus {
     color: var(--white-simbols-color);
@@ -198,9 +216,22 @@ button {
 .filter .current:focus {
     color: var(--white-simbols-color);
     background-color: var(--header-link-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;    
+}
+
+.select.all {
+    width: 73px;
+}
+.select.web {
+    width: 125px;
+}
+.select.dods {
+    width: 112px;
+}
+.select.disain {
+    width: 103px;
+}
+.select.marketing {
+    width: 130px;
 }
 
 /* Секція Потфоліо */
