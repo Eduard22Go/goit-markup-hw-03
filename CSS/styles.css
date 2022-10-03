@@ -8,6 +8,7 @@
    --secondary-background-color:#F5F4FA;
    --footer-background-color:#2F303A;
    --logo-black-color:#000000;
+   --header-border-bottom:#ECECEC;
 }
 /* Цвет заголовков - основного текста #212121 */
 /* Вторичый цвет основного текста #757575 */
@@ -18,6 +19,7 @@
 /* Вторичный цвет фона #F5F4FA */
 /* Цвет подвала #2F303A */
 /* Цвет лого черный #000000 */
+/* Нижняя рамка хедера  #ECECEC*/
 body {
     margin:0;
     background-color: var(--primery-background-color);    
@@ -26,13 +28,25 @@ body {
     font-size:14px;
     letter-spacing: 0.03em;
 }
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+    margin:0;
+    padding:0
+} 
 .container {
     width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+
     outline: 2px solid tomato;
 }
+
+
 /* Убирает маркер в списках */
 .list,
 .feature-list {
@@ -56,7 +70,7 @@ body {
 
 /* Page header */
 .page-header {
-    background-color: #ccc;
+     background-color: #ccc;
 }
 
 /* site-nav */
@@ -96,6 +110,7 @@ body {
 }
 
 /* Hero */
+
 .hero-title {
     color: var(--white-simbols-color);
     font-weight: 900;
@@ -104,6 +119,9 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    padding-top: 200px;
+    margin-bottom: 30px;
 
     background-color: #757575;
 }
@@ -118,10 +136,14 @@ button {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+
+    padding: 10px 32px;
+    border-radius: 4px;
+    border-color: transparent;
 }
 
 /* Стили для index.html */
@@ -135,6 +157,15 @@ button {
 .feature-list .text {
     line-height: 1.71;
 }
+.feature-list.container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+/* Секція Чим ми займаємося */
+.works.section-title{
+margin-bottom: 50px;
+}
 
 /*Секція Наша команда*/
 .section-title
@@ -145,17 +176,28 @@ button {
     line-height: 1.17;
     text-align: center;
 }
-.emplois .name {
+.team .name {
     color:var(--headers-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
-.emplois .text {
+.team .text {
     color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.19;
 }
+.team.container {
+    width:1600px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    padding-left: 215px;
+    padding-right: 215px;
+}
+
 
 /*Footer*/
 .link.list-adress {
@@ -183,7 +225,12 @@ button {
     color:var(--white-simbols-color)
 }
 
-.foot{
+.foot.container{
+    width: 1600px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 215px;
+
     background-color: darkgray;
 }
 
@@ -200,6 +247,8 @@ button {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
+
+    text-align: center;
 }
 
 .filter .select:hover,
@@ -219,19 +268,19 @@ button {
 }
 
 .select.all {
-    width: 73px;
+    min-width:73px;
 }
 .select.web {
-    width: 125px;
+    min-width: 125px;
 }
 .select.dods {
-    width: 112px;
+    min-width: 112px;
 }
 .select.disain {
-    width: 103px;
+    min-width: 103px;
 }
 .select.marketing {
-    width: 130px;
+    min-width: 130px;
 }
 
 /* Секція Потфоліо */
