@@ -109,8 +109,13 @@ ul {
     font-style: normal;
 }
 
-/* Hero */
-
+/* Секція Hero */
+.hero.container {
+    background-color: var(--footer-background-color);
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
 .hero-title {
     color: var(--white-simbols-color);
     font-weight: 900;
@@ -120,10 +125,8 @@ ul {
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    padding-top: 200px;
     margin-bottom: 30px;
 
-    background-color: #757575;
 }
 /* Hero Button Замовити послугу */
 button {
@@ -163,7 +166,7 @@ button {
 }
 
 /* Секція Чим ми займаємося */
-.works.section-title{
+.works.section-title {
 margin-bottom: 50px;
 }
 
@@ -231,10 +234,15 @@ margin-bottom: 50px;
     padding-bottom: 60px;
     padding-left: 215px;
 
-    background-color: darkgray;
+    background-color: var(--footer-background-color);
 }
 
 /* Стили для  страницы Portfolio */
+
+.portfolio.container {
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
 
 /*Кнопки Фильтр*/
 .select {
@@ -281,6 +289,7 @@ margin-bottom: 50px;
 }
 .select.marketing {
     min-width: 130px;
+    margin-bottom: 34px;
 }
 
 /* Секція Потфоліо */
@@ -289,7 +298,10 @@ margin-bottom: 50px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.06em; 
+
+    margin-top: 20px;
+    margin-bottom: 4px;
 }
 .portfolio .text {
     color: var(--secondary-text-color);
