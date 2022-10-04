@@ -74,7 +74,24 @@ ul {
 }
 
 /* site-nav */
+.site-nav {
+    display: flex;
+}
+
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+
+
+.site-nav li {
+    outline: 1px solid red;
+}
 .site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color:var(--headers-color);
     font-weight: 500;
     font-size: 14px;
@@ -89,11 +106,20 @@ ul {
     color:var(--header-link-color);
 }
 /*address*/
+.address-footer {
+    display: flex;
+}
+.address-footer li{
+    outline: 2px solid red;
+}
+.address-footer .item + .item {
+    margin-left: 12px;
+}
 .address .link {
     color:var(--secondary-text-color);
     font-weight: 500;
     line-height: 1.14px;
-    letter-spacing: 0.02em;   
+    letter-spacing: 0.02em; 
 }
 .address .link:hover,
 .address .link:focus {
