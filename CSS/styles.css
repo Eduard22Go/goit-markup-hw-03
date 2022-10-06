@@ -45,7 +45,7 @@ ul {
     padding-left: 15px;
     padding-right: 15px;
 
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
 }
 
 
@@ -61,10 +61,12 @@ ul {
     width:1600px;
     padding-left: 215px;
     padding-right: 215px;
+    border-bottom:1px solid #ECECEC;
 
     align-items: center;
 
     background-color:var(--primery-background-color);
+
 }
 .nav-header {
    display: flex;
@@ -83,7 +85,8 @@ ul {
     font-size: 26px;
     line-height: 1.19;
 }
-.logo:hover {
+.logo:hover,
+.logo:focus {
     color:var(--header-link-color);
 }
 
@@ -105,9 +108,9 @@ ul {
     margin-right: 50px;
 }
 
-.site-nav li {
+/* .site-nav li {
     outline: 1px solid red;
-}
+} */
 .site-nav .link {
     display: block;
     padding-top: 32px;
@@ -135,9 +138,9 @@ ul {
     padding-top: 32px;
     padding-bottom: 32px;
 }
-.address-header li{
-    outline: 2px solid red;
-}
+/* .address-header li{
+    outline: 2px solid red; 
+} */
 .address-header .item + .item {
     margin-left: 50px;
 }
@@ -256,13 +259,15 @@ margin-bottom: 50px;
 .list.team {
     display:flex;
 }
-.list.team .item {
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px;
 
-    box-shadow: 2px 4px 10px red;
+.list.team .item {
+    flex-basis: calc((100% - 90px) / 4);
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
+
 .team .item:not(:last-child) {
     margin-right: 30px;
 }
@@ -311,6 +316,10 @@ margin-bottom: 50px;
 .link.list-mail:focus {
     color:var(--header-link-color);
 }
+.address-foot .item {
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
 .link.list-phone {
     color:var(--footer-link-color);
 }
@@ -318,8 +327,12 @@ margin-bottom: 50px;
 .link.list-phone:focus {
     color:var(--header-link-color);
 }
-.logo .footer-logo {
-    color:var(--white-simbols-color)
+.footer-logo {
+    color:var(--white-simbols-color);
+ }
+ .footer-logo:hover,
+ .footer-logo:focus {
+    color:var(--header-link-color);
 }
 
 .foot.container{
