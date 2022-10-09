@@ -71,9 +71,11 @@ ul {
 }
 
 /* Page header */
+.page-header {
+    border-bottom:1px solid var(--header-border-bottom); 
+}
 .page-header .container {
     display:flex;
-    border-bottom:1px solid #ECECEC;
     align-items: center;
     /* background-color:var(--primery-background-color); */
     justify-content: space-between;
@@ -171,7 +173,7 @@ ul {
 }
 
 /* Секція Hero */
-.hero .container {
+.hero {
     background-color: var(--footer-background-color);
     text-align: center;
     
@@ -253,7 +255,7 @@ button {
 }
 
 /*Секція Наша команда*/
-.team .container {
+.section.team {
     background-color: var(--secondary-background-color );
 }
 .list.team {
@@ -313,10 +315,10 @@ button {
 .address-foot .item:not(:last-child) {
     margin-bottom: 9px;
 }
-.address-foot .link.list-address {
+
+.address-foot .link {
     font-weight: 400;
 }
-
 .link.list-phone {
     color:var(--footer-link-color);
 }
@@ -332,7 +334,7 @@ button {
     color:var(--header-link-color);
 }
 
-.foot .container {
+.foot {
     background-color: var(--footer-background-color);
     padding-top: 60px;
     padding-bottom: 57px;
@@ -438,6 +440,8 @@ button {
 .portfolio-title {
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
     border-left: 1px solid var(--portfolio-cards-border);
     border-right: 1px solid var(--portfolio-cards-border);
     border-bottom: 1px solid var(--portfolio-cards-border);
